@@ -1414,7 +1414,7 @@ body {
   }
 
   .height3 {
-    height: 100vh;
+    height: 80vh;
   }
 }
 @media (max-width: 380px) {
