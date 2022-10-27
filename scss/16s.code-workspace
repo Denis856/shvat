@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\..\\HTML\\examples\\фон\\animation_bg"
+		},
+		{
+			"path": "..\\..\\15s"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "16s"
+	}
+}
