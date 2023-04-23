@@ -133,9 +133,9 @@ body.active {
 @media (max-width: 770px) {
   .header {
     position: fixed;
-    padding: 20px 10px 0 10px;
+    padding: 30px 10px 0 10px;
     background: rgba(16, 181, 129, 0.9176470588);
-    height: 40px;
+    height: 60px;
   }
 }
 @media (max-width: 770px) {
@@ -244,19 +244,20 @@ body.active {
 .header__burger::before, .header__burger span, .header__burger::after {
   content: "";
   position: absolute;
-  width: 20px;
-  height: 2px;
+  width: 30px;
+  height: 4px;
   background: #FDFDFD;
   top: 0;
   left: 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  border-radius: 10px;
 }
 .header__burger::before {
-  top: 7px;
+  top: 10px;
 }
 .header__burger::after {
-  top: -7px;
+  top: -10px;
 }
 .header__burger.active::before {
   top: 0px;
