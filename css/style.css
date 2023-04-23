@@ -116,12 +116,18 @@ body.active {
 }
 
 .header {
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
   background: #10B582;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   padding: 40px 10px;
+}
+.header.active {
+  opacity: 1;
 }
 @media (max-width: 770px) {
   .header {
@@ -184,7 +190,15 @@ body.active {
 }
 
 .footer {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: scale(0.1);
+          transform: scale(0.1);
   padding: 200px 0 30px 0;
+}
+.footer.active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 @media (max-width: 770px) {
   .footer {
@@ -391,6 +405,14 @@ body.active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: scale(0.1) rotateX(180deg) rotateY(180deg);
+          transform: scale(0.1) rotateX(180deg) rotateY(180deg);
+}
+.home__body.active {
+  -webkit-transform: scale(1) rotateX(0deg) rotateY(0deg);
+          transform: scale(1) rotateX(0deg) rotateY(0deg);
 }
 @media (max-width: 770px) {
   .home__body {
@@ -493,6 +515,14 @@ body.active {
 
 .info {
   padding: 120px 0 90px 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: scale(0.1);
+          transform: scale(0.1);
+}
+.info.active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 @media (max-width: 770px) {
   .info {
@@ -552,6 +582,14 @@ body.active {
 
 .about {
   padding-bottom: 120px;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.about.active {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
 }
 @media (max-width: 770px) {
   .about {
@@ -689,6 +727,14 @@ body.active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.choice__body.active {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
 }
 @media (max-width: 770px) {
   .choice__body {
@@ -768,7 +814,15 @@ body.active {
 
 .courses {
   padding: 120px 0;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  -webkit-transition: 1s;
+  transition: 1s;
   color: #353A5A;
+}
+.courses.active {
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
 }
 @media (max-width: 770px) {
   .courses {
@@ -853,6 +907,14 @@ body.active {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.mentor__body.active {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
 }
 @media (max-width: 1300px) {
   .mentor__body {
