@@ -119,6 +119,7 @@ body.active {
   -webkit-transition: 1s;
   transition: 1s;
   opacity: 0;
+  z-index: 10;
   background: #10B582;
   position: absolute;
   top: 0;
